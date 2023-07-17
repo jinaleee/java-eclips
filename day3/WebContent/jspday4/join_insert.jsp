@@ -22,7 +22,7 @@
 		
 		try{
 			stmt = conn.createStatement();
-			String sql = "INSERT INTO TBL_USER VALUES('"+ uId +"', '" + pwd + "', '" + uName + "', '" + phone + "', '" + age + "', '" + addr + "')";
+			String sql = "INSERT INTO TBL_USER(U_ID,PWD,U_NAME,PHONE,AGE,ADDR) VALUES('"+ uId +"', '" + pwd + "', '" + uName + "', '" + phone + "', '" + age + "', '" + addr + "')";
 			System.out.println(sql);
 			stmt.executeUpdate(sql);
 			out.println(uName + "님 가입을 축하합니다!!");

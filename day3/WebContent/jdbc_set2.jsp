@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*" %>	
+<%@ page import="java.sql.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,12 +10,12 @@
 <body>
 	<%
 		Connection conn;
-		Class.forName("oracle.jdbc.driver.OracleDriver");
-		String db_url = "jdbc:oracle:thin:@localhost:1521:xe";
-		String db_id = "SYSTEM";
-		String db_pw = "test123";
+		Class.forName("com.mysql.jdbc.Driver"); 
+		String db_url = "jdbc:mysql://db-hedhk.pub-cdb.ntruss.com/tj-db1";
+		String db_id = "tj_test1";
+		String db_pw = "test12#$";
 		conn = DriverManager.getConnection(db_url, db_id, db_pw);
-		System.out.println("DB 연결 완료");
-	 %>
+		/* out.println("DB 연결 완료"); */
+	%>
 </body>
 </html>

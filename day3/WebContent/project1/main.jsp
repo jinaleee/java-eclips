@@ -8,19 +8,6 @@
 </head>
 <body>
 	<%@ include file="../jdbc_set.jsp" %>
-			<%
-	      //String uId = (String) session.getAttribute("userId");
-	      //String uName = (String) session.getAttribute("userName");
-	      //session.invalidate();
-	      //if(request.isRequestedSessionIdValid()){//세션이 유효한지 확인
-	      //   out.println("세션있다");
-	      //}else{
-	      //   out.println("세션없다");
-	      //}
-	      
-
-	   %>
-	
 	<%
 		String uName = (String) session.getAttribute("userName");
 		out.println(uName + "님 환영합니다.");
