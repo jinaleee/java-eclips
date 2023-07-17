@@ -41,5 +41,5 @@
 </html>
 <script>
 	alert("수정되었습니다");
-	/* window.close();	 */
+	window.close();
 </script>

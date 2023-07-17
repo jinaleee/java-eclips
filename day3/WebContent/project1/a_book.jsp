@@ -134,7 +134,7 @@
 		location.href="admin.jsp";
 	}
 	function a_update(){
-		window.open("a_event.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");
+		window.open("a_bookEvent.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");
 	}
 	function a_approval(){
 		window.open("a_approval.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");

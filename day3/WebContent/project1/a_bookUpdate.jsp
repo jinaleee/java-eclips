@@ -47,5 +47,6 @@
 <script>
 	function back(){
 		location.href = "a_event.jsp?num=<%= num %>";
+		
 	}
 </script>

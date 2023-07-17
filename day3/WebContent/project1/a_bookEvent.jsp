@@ -147,6 +147,7 @@
 			return;
 		} */
 		form.submit();
+		
 	}
 	
 	updatePaxOptions();

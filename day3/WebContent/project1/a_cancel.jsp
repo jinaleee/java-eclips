@@ -43,5 +43,6 @@
 <script>
 	function back(){
 		window.close();
+		window.opener.getReturn();
 	}
 </script>

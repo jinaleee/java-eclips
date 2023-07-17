@@ -8,12 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form name = "updateForm" action="user_update.jsp">
+	<form name = "updateForm" action="a_userUpdate.jsp">
 	<%@ include file="../jdbc_set2.jsp" %>
 	<%
 		request.setCharacterEncoding("UTF-8");
-		String uId = (String) session.getAttribute("userId");
-		String uName = (String) session.getAttribute("userName"); 
+		String uId = request.getParameter("uId");
 		ResultSet rs = null; // 검색 결과를 담기 위한 객체
 		Statement stmt = null; // 쿼리 호출을 위한 객체
 		
@@ -46,3 +45,5 @@
 	
 </body>
 </html>
+<script>
+</script>

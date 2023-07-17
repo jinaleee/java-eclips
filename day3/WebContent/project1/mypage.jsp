@@ -78,8 +78,7 @@ try {
 					<% 
                     if(book.equals("W")){
                         %><input type="radio" name="numCheck"
-					value="<%=num%>">
-					<%
+					value="<%=num%>"> <%
                         }
                     %>
 				</td>
@@ -106,8 +105,7 @@ try {
                 if(cancel.equals("R")){
                     out.print("취소 신청");
                 }else if(cancel.equals("Y")){
-                    %><span style="color: red;">취소 완료</span>
-					<%
+                    %><span style="color: red;">취소 완료</span> <%
                 }
                 %>
 				</td>
@@ -122,12 +120,13 @@ try {
 			<%    
     }
 } catch (SQLException ex) {
-    out.println("Member 테이블 호출이 실패했습니다.<br>");
+    out.println("테이블 호출이 실패했습니다.<br>");
     out.println("SQLException: " + ex.getMessage());
 } 
 %>
 		</table>
 		<div>
+			<input class="btn" type="button" value="예약 정보 수정" onclick="b_update()">
 			<input class="btn" type="button" value="예약 취소 신청" onclick="cancel()">
 		</div>
 		<div>
@@ -182,17 +181,19 @@ try {
 		</table>
 	</form>
 	<div>
-		<input class="btn" type="button" value="회원정보수정" onclick="update()">
+		<input class="btn" type="button" value="회원정보수정" onclick="u_update()">
 		<input class="btn" type="button" value="메인으로" onclick="back()">
 	</div>
 </body>
 </html>
 <script>
-//유저 정보 수정(관리자)
+	function b_update(){
+		window.open("user_b_event.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");
+	}
 	function cancel(){
 		window.open("user_cancel.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");
 	}
-	function update(){
+	function u_update(){
 		window.open("user_event.jsp", "popup", "width=600, height=300");
 	}
 	function back(){

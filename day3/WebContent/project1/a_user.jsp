@@ -97,13 +97,13 @@
 			return;
 		}
 		var form = document.list;
-		window.open("user_del.jsp?uId=" + form.user.value,"popup1","width=600, height=300");
+		window.open("a_userDel.jsp?uId=" + form.user.value,"popup","width=600, height=300");
 	}
 	
 	//유저 정보 수정(관리자)
 	function userUpdate(){
-		var uId = document.list.user.value;
-		window.open("user_event.jsp?uId="+uId,"popup2","width=600, height=300");
+		var form = document.list;
+		window.open("a_userEvent.jsp?uId="+form.user.value,"popup","width=600, height=300");
 	}
 	
 	function gradeChange(kind,uId){
@@ -112,7 +112,7 @@
 		}else{
 			kind = "M";
 		}
-		window.open("user_grade.jsp?uId="+uId+"&kind="+kind,"popup","width=500, height=500");
+		window.open("a_userGrade.jsp?uId="+uId+"&kind="+kind,"popup","width=500, height=500");
 	}
 	
 	//정지 여부
@@ -122,12 +122,12 @@
 		} else {
 			kind = "N"
 		}
-		window.open("user_ban.jsp?uId="+uId+"&kind="+kind,"popup","width=500, height=500");
+		window.open("a_userBan.jsp?uId="+uId+"&kind="+kind,"popup","width=500, height=500");
 	}
 	
 	//로그인 시도 횟수
 	function cntChange(uId){
-		window.open("user_cnt.jsp?uId="+uId, "popup2"
+		window.open("a_userCnt.jsp?uId="+uId, "popup"
 				,"width=500, height=500");
 	}
 	
