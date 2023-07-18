@@ -19,8 +19,13 @@
 	.btn{
 		margin-top : 20px;
 	}
+	#container{
+		margin : 10px auto;
+		width : 1100px;
+	}
 </style>
 <body>
+<div id="container">
 <h1>예약 관리</h1>
 <hr>
 	<%@ include file="../jdbc_set2.jsp" %>
@@ -127,6 +132,7 @@
 	</form>
 	<hr>
 <input type="button" value="이전으로" onclick="back()" />
+</div>
 </body>
 </html>
 <script>

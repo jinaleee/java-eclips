@@ -7,35 +7,48 @@
 <title>Insert title here</title>
 </head>
 <style>
-table {
-	border-collapse: collapse;
-	text-align: center;
-	margin-botton: 20px;
-}
-
-th, td {
-	border: 1px solid black;
-	padding: 5px 10px;
-}
-
-.btn {
-	margin-top: 20px;
-}
+	table {
+		border-collapse : collapse;
+		text-align: center;
+		margin-botton : 20px;
+		font-size : 15px;
+	}
+	
+	th, td {
+		border : 1px solid black;
+		padding : 5px 10px;
+	}
+	
+	.btn {
+		margin-top : 20px;
+	}
+	#container{
+		margin : 10px auto;
+		width : 1100px;
+	}
+	fieldset {
+		padding : 45px;
+		margin : 30px 0px;
+	}
+	legend{
+		font-size : 22px;
+		font-weight : bold;
+	}
 </style>
+<header>
+	<jsp:include page="home.jsp" />
+</header>
 <body>
+<div id="container">
 	<%@ include file="../jdbc_set2.jsp"%>
 	<h1>마이페이지</h1>
 	<% 
-String uId = (String) session.getAttribute("userId");
-String uName = (String) session.getAttribute("userName"); 
-%>
-	<div><%= uName %>님 환영합니다.
-	</div>
+		String uId = (String) session.getAttribute("userId");
+		String uName = (String) session.getAttribute("userName"); 
+	%>
 	<hr>
-	<div>
-		<h2>예약 확인</h2>
-	</div>
-
+	<fieldset>
+	<legend> 예약 확인 </legend>
 	<form name="bookcheck">
 		<table>
 			<tr>
@@ -129,10 +142,10 @@ try {
 			<input class="btn" type="button" value="예약 정보 수정" onclick="b_update()">
 			<input class="btn" type="button" value="예약 취소 신청" onclick="cancel()">
 		</div>
-		<div>
-			<h2>회원 정보</h2>
-		</div>
+		</fieldset>
 
+		<fieldset>
+		<legend> 회원 정보 </legend>
 		<table>
 			<tr>
 				<th>아이디</th>
@@ -184,6 +197,8 @@ try {
 		<input class="btn" type="button" value="회원정보수정" onclick="u_update()">
 		<input class="btn" type="button" value="메인으로" onclick="back()">
 	</div>
+	</fieldset>
+</div>
 </body>
 </html>
 <script>

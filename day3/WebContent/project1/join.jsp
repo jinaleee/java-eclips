@@ -7,87 +7,202 @@
 <title>Insert title here</title>
 </head>
 <style>
-#container{
-	margin: 10px auto;
-	width: 1000px;
-}
-fieldset {
-	padding: 30px;
-}
-
-.put {
-	border-style: none;
-	border-bottom: 1px solid #ccc;
-}
-span{
-	color : red;
-}
+	#container{
+		margin: 10px auto;
+		width: 1000px;
+	}
+	h2{
+		color : rgb(175, 160, 136);
+	}
+	hr{
+		border-color : rgb(175, 160, 136);
+	}
+	fieldset {
+		padding: 50px;
+		margin-top : 30px;
+		border-color : #ccc; 
+	}
+	.put {
+		border-style: none;
+		border-bottom: 1px solid #ccc;
+		width : 285px;
+	}
+	.put2 {
+		border-style: none;
+		border-bottom: 1px solid #ccc;
+		width : 120px;
+	}
+	.put3 {
+		border-style: none;
+		border-bottom: 1px solid #ccc;
+		width : 137px;
+	}
+	.put_b {
+		border-style: none;
+		border-bottom: 1px solid #ccc;
+		width : 93px;
+	}
+	span{
+		color : red;
+	}
+	li{
+		list-style:none;
+	}
+	#ul-container {
+		display: flex;
+		margin-left : 50px;
+	}
+	#ul1, #ul2 {
+		display: inline-block;
+		vertical-align: top;
+		line-height : 50px;
+		margin-left : 30px;
+	}
+	#phone{
+		width : 85px;
+	}
+	input{
+		margin : 2px;
+	}
+	.btns{
+		margin-top : 40px;
+		text-align: center;
+	}
+	.btn{
+		border : none;
+		background-color : rgb(175, 160, 136);
+		border-radius : 5px;
+		padding : 12px 30px;
+		margin : 0px 10px;
+		color : white;
+		opacity: 1;
+  		transition: opacity 0.3s;
+	}
+	.btn:hover{
+		background-color : rgb(139, 124, 102);
+		opacity: 0.7;
+	}
+	#checkbtn{
+		border : none;
+		background-color : rgb(175, 160, 136);
+		border-radius : 5px;
+		padding : 2px 5px;
+		margin : 0px 10px;
+		color : white;
+		opacity: 1;
+  		transition: opacity 0.3s;
+	}
+	#checkbtn:hover{
+		background-color : rgb(139, 124, 102);
+		opacity: 0.7;
+	}
+	input[type="button"]:hover {
+	  cursor: pointer;
+	}
+	#text{
+		color:gray;
+	}
 </style>
+<header>
+	<jsp:include page="home.jsp" />
+</header>
 <body>
 <div id="container">
 	<form action="join_insert.jsp" name="userForm" method="post">
-		<h1>회원가입</h1>
+		<h2>회원가입</h2>
+		<div id="text">
+		MANGCHI HOTEL의 리워즈 멤버십 회원만을 위한 다양한 혜택과 서비스를 누려보세요.
+		</div>
 		<hr>
 		<fieldset>
-			<div>
-				아이디 <span>*</span> <input class="put" type="text" name="uId"
-					placeholder="영문, 숫자만 사용 가능" required autofocus /> <input type="button"
-					onclick="idCheck();" value="중복체크">
-			</div>
-			<div>
-				비밀번호 <span>*</span> <input class="put" type="password" name="pwd1" required>
-			</div>
-			<div>
-				비밀번호 확인 <span>*</span> <input class="put" type="password" name="pwd2" required>
-			</div>
-			<div>
-				이름 <span>*</span> <input class="put" type="text" name="uName" required>
-			</div>
-			<div>
-				핸드폰번호 <span>*</span> 
-				<input class="put" type="text" name="phone1">-<input class="put" type="text" name="phone2">-<input class="put" type="text" name="phone3">
-			</div>
-			<div>
-				이메일 <span>*</span> <input class="put" type="email" name="eMail1"> @ 
-				<select name="eMail2" class="put">
+		<div id="ul-container">
+			<ul id="ul1">
+				<li>
+					아이디 <span>*</span> 
+				</li>
+				<li>
+					비밀번호 <span>*</span> 
+				</li>
+				<li>
+					비밀번호 확인 <span>*</span> 
+				</li>
+				<li>
+					이름 <span>*</span> 
+				</li>
+				<li>
+					핸드폰번호 <span>*</span> 
+				</li>
+				<li>
+					이메일
+				</li>
+				<li>
+					생년월일 <span>*</span>
+				</li>
+				<li>
+					안내 메일
+				</li>
+				<li>
+					안내 문자
+				</li>
+			</ul>
+			<ul id="ul2">
+				<li>
+				<input class="put" type="text" name="uId"
+					placeholder="영문, 숫자만 사용 가능" required autofocus /> <input type="button" onclick="idCheck();" value="중복확인" id="checkbtn">
+				</li>
+				<li>
+				<input class="put" type="password" name="pwd1" required>
+				</li>
+				<li>
+				<input class="put" type="password" name="pwd2" required>
+				</li>
+				<li>
+				<input class="put" type="text" name="uName" required>
+				</li>
+				<li>
+				<input class="put" type="text" name="phone1" id="phone">-<input class="put" type="text" name="phone2" id="phone">-<input class="put" type="text" name="phone3" id="phone">
+				</li>
+				<li>
+				<input class="put2" type="email" name="eMail1"> @ 
+				<select name="eMail2" class="put3">
 					<option value="@naver.com">naver.com</option>
 					<option value="@gmail.com">gmail.com</option>
 					<option value="@daum.net">daum.net</option>
 					<option value="@daum.net">nate.com</option>
 				</select>
-			</div>
-			<div>
-				<label for="b_year">생년월일 <span>*</span></label> 
-				<select name="b_year" class="put">
+				</li>
+				<li>
+				<select name="b_year" class="put_b">
 					<% for(int i=2003; i>=1950; i--){
 						%> 
 						<option value="<%= i %>"><%= i %></option>
 					<%}%>
 				</select> 
-				<select name="b_month" class="put">
+				<select name="b_month" class="put_b">
 					<% for(int i=1; i<=12; i++){
 						%> 
 						<option value="<%= i %>"><%= i %></option>
 					<%}%>
 				</select> 
-				<select name="b_day" class="put">
+				<select name="b_day" class="put_b">
 					<% for(int i=1; i<=31; i++){
 						%> 
 						<option value="<%= i %>"><%= i %></option>
 					<%}%>
 				</select>
+				</li>
+				<li>
+					수신　<input type="radio" name="mailYn" value="Y" />　　　수신 안 함　<input type="radio" name="mailYn" value="N" checked>
+				</li>
+				<li>
+					수신　<input type="radio" name="msYn" value="Y">　　　수신 안 함　<input type="radio" name="msYn" value="N" checked>
+				</li>
+			</ul>
 			</div>
-			<div>
-				안내 메일 수신 <input type="radio" name="mailYn" value="Y" /> 수신 안 함 <input
-					type="radio" name="mailYn" value="N" checked>
-			</div>
-			<div>
-				안내 문자 수신 <input type="radio" name="msYn" value="Y"> 수신 안 함 <input
-					type="radio" name="msYn" value="N" checked>
-			</div>
-			<div>
-				<input type="button" onclick="userJoin()" value="회원가입"> <input
-					type="button" onclick="back()" value="돌아가기">
+
+			<div class="btns">
+				<input type="button" onclick="userJoin()" value="회원가입" class="btn"> <input
+					type="button" onclick="back()" value="돌아가기" class="btn">
 			</div>
 		</fieldset>
 	</form>

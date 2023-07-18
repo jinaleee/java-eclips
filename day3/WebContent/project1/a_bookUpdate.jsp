@@ -35,7 +35,7 @@
 				sql = "UPDATE JN_ROOM SET ID = '"+ uId +"', NAME = '"+ uName +"', ROOM = '"+ room +"', STARTDATE ='"+ startdate +"', LASTDATE='"+lastdate+"', PAX='"+pax+"', BFYN='"+bf+"', POOLYN = '"+pool+"', RES = '"+res+"' WHERE NUM = '" + num + "'";
 				stmt.executeUpdate(sql);
 				out.print("수정되었습니다.");
-				%><input type="button" onclick="window.close();" value="닫기"><%
+				%><input type="button" onclick="clo()" value="닫기"><%
 			}
 		} catch (SQLException ex) {
 			out.println("수정 실패했습니다.<br>");
@@ -45,6 +45,10 @@
 	</body>
 </html>
 <script>
+	function clo(){
+		window.close();
+		window.opener.location.reload();
+	}
 	function back(){
 		location.href = "a_event.jsp?num=<%= num %>";
 		

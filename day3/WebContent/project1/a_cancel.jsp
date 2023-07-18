@@ -43,6 +43,6 @@
 <script>
 	function back(){
 		window.close();
-		window.opener.getReturn();
+		window.opener.location.reload();
 	}
 </script>

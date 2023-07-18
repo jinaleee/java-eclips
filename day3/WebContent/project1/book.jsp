@@ -7,26 +7,44 @@
 <title>Insert title here</title>
 </head>
 <style>
-	span{
+	#vip{
 		font-weight : bold;
 		text-decoration: underline;
 	}
+	#container{
+		margin : 10px auto;
+		width : 1100px;
+	}
+	fieldset {
+		padding : 45px;
+		margin : 30px 0px;
+	}
+	.put {
+		border-style: none;
+		border-bottom: 1px solid #ccc;
+	}
 </style>
+<header>
+	<jsp:include page="home.jsp" />
+</header>
 <body>
+<div id="container">
 	<%@ include file="../jdbc_set2.jsp" %>
 	<h1>예약</h1>
 	<hr>
+	<fieldset>
 	<form name="form" action="bookCheck.jsp">
 	<%
-	String uId = (String) session.getAttribute("userId");
-	String uName = (String) session.getAttribute("userName");
-	out.print(uName+"님 예약 페이지");
+		String uId = (String) session.getAttribute("userId");
+		String uName = (String) session.getAttribute("userName");
+		out.print(uName+"님 예약 페이지");
 	%>
-	<div>날짜 선택 <input name="start" type="date" onchange="updatelastDate()" />~<input name="last" type="date"></div>
+	<hr>
+	<div>날짜 선택 <input class="put" name="start" type="date" onchange="updatelastDate()" />~<input class="put" name="last" type="date"></div>
 	
 	<div>
 	객실 선택 
-	<select name="room" onchange="updatePaxOptions()">
+	<select name="room" onchange="updatePaxOptions()" class="put">
 		<option value="디럭스 더블">디럭스 더블</option>
 		<option value="디럭스 트윈">디럭스 트윈</option>
 		<option value="스위트 더블">스위트 더블</option>
@@ -36,7 +54,7 @@
 	</div>
 	<div>
 	인원수
-	<select name="pax">
+	<select name="pax" class="put">
 	</select>
 	</div>
 	<div>조식 신청 <input type="radio" name="bf" value="Y" /> 미신청 <input type="radio" name="bf" value="N" checked /></div>
@@ -52,7 +70,7 @@
 		if(rs.next()){
 			String grade = rs.getString("GRADE");
 			if(grade.equals("VIP")){
-				%><span> VIP 회원 인피니티풀 무료 이용 </span>
+				%><span id="vip"> VIP 회원 인피니티풀 무료 이용 </span>
 				<input type="radio" name="pool" value="Y" checked/><%
 			}else{
 				%><input type="radio" name="pool" value="Y" /> 이용 안 함 <input type="radio" name="pool" value="N" checked /><%
@@ -67,6 +85,8 @@
 	 
 	<div style="margin-top : 20px ;"><input type="button" value="예약신청" onclick="book()"/> <input type="button" value="취소" onclick="back()" /></div>
 </form>
+</fieldset>
+</div>
 </body>
 </html>
 <script>

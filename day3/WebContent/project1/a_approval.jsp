@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%@ include file="../jdbc_set2.jsp" %>
-<%
+		<%
 		String num = request.getParameter("num");
 		Statement stmt = null;
 
