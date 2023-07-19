@@ -9,7 +9,7 @@
 <style>
 	#container{
 		margin: 10px auto;
-		width: 1000px;
+		width: 1100px;
 	}
 	h2{
 		color : rgb(175, 160, 136);
@@ -20,7 +20,7 @@
 	fieldset {
 		padding: 50px;
 		margin-top : 30px;
-		border-color : #ccc; 
+		border : 1px solid rgb(200, 200, 200);
 	}
 	.put {
 		border-style: none;
@@ -168,7 +168,7 @@
 					<option value="@naver.com">naver.com</option>
 					<option value="@gmail.com">gmail.com</option>
 					<option value="@daum.net">daum.net</option>
-					<option value="@daum.net">nate.com</option>
+					<option value="@nate.com">nate.com</option>
 				</select>
 				</li>
 				<li>
@@ -271,6 +271,6 @@
 		}
 	}
 	function back(){
-		location.href="home.jsp";
+		location.href="main.jsp";
 	}
 </script>

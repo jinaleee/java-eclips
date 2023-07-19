@@ -110,7 +110,7 @@
 	}
 </style>
 <header>
-<div id="title"><a href="home.jsp" id="title_a"><img id="logo" src="logo_white.png"> MANGCHI HOTEL</a></div>
+<div id="title"><a href="main.jsp" id="title_a"><img id="logo" src="logo_white.png"> MANGCHI HOTEL</a></div>
 
 	<div id="topMenu">
 	<%	
@@ -143,18 +143,17 @@
 	
 	<div>
 	<ul class="menu_ul">
-		<li class="menu_li"><a class="menu" href="">HOTEL</a></li>
-		<li class="menu_li"><a class="menu" href="">DINING</a></li>
+		<li class="menu_li"><a class="menu" href="hotel.jsp">HOTEL</a></li>
+		<li class="menu_li"><a class="menu" href="dining.jsp">DINING</a></li>
 		<li class="menu_li"><a class="menu" href="book.jsp" onclick="checkBooking()">RESERVATION</a></li>
-		<li class="menu_li" style="margin-right:0px;"><a class="menu" href="">CUSTOMER SUPPORT</a></li>
+		<li class="menu_li"><a class="menu" href="info.jsp">INFORMATION</a></li>
+		<li class="menu_li" style="margin-right:0px;"><a class="menu" href="cs.jsp">CUSTOMER SERVICE</a></li>
 	</ul>
 	</div>
 </header>
 <body>
 <%@ include file="../jdbc_set2.jsp" %>
-	<div id="middle">
 
-	</div>
 </body>
 </html>
 <script>

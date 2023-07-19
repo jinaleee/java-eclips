@@ -6,6 +6,52 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+	#container{
+		margin : 10px auto;
+		width : 1100px;
+	}
+	fieldset {
+		padding: 45px;
+		margin-top : 30px;
+		border : 1px solid rgb(200, 200, 200);
+	}
+	h2{
+		color : rgb(175, 160, 136);
+	}
+	hr{
+		border-color : rgb(175, 160, 136);
+	}	
+	.btns{
+		margin : 40px;
+		text-align: center;
+	}
+	.btn{
+		border : none;
+		background-color : rgb(175, 160, 136);
+		border-radius : 5px;
+		padding : 12px 30px;
+		margin : 0px 10px;
+		color : white;
+		opacity: 1;
+  		transition: opacity 0.3s;
+	}
+	.btn:hover{
+		background-color : rgb(139, 124, 102);
+		opacity: 0.7;
+	}
+	input[type="button"]:hover {
+	  	cursor: pointer;
+	}
+	.text{
+		text-align : center;
+		margin : 70px;
+		line-height : 30px;
+	    color: rgb(133 123 107);
+	    font-size: 20px;
+	    font-weight: 100;
+	}
+</style>
 <body>
 	<%@ include file="../jdbc_set2.jsp" %>
 		<%
@@ -20,20 +66,20 @@
 				String sql = "UPDATE JN_ROOM SET BOOK= 'Y' WHERE NUM = '" + num + "'";
 				stmt = conn.createStatement();
 				stmt.executeUpdate(sql);
-				out.println("예약이 확정되었습니다.");
+				%><div class="text">체크인 완료.</div><%
 				} else {
-					out.println("승인 실패.");
+				%><div class="text">체크인 실패.</div><%
 				}
 		} catch (SQLException ex) {
 			out.println("SQLException: " + ex.getMessage());
 		} 
 	%>
-	<div><input type="button" onclick="back()" value="닫기"></div>
+	<div class="btns"><input class="btn" type="button" onclick="back()" value="닫기"></div>
 </body>
 </html>
 <script>
 	function back(){
 		window.close();
-		window.opener.getReturn();
+		window.opener.location.reload();
 	}
 </script>

@@ -7,32 +7,72 @@
 <title>Insert title here</title>
 </head>
 <style>
-	table{
-		border-collapse: collapse;
-		text-align : center;
-		margin-botton : 20px;
-	}
-	th, td{
-		border : 1px solid black;
-		padding : 10px 15px;
-	}
-	.btn{
-		margin-top : 20px;
-	}
 	#container{
 		margin : 10px auto;
-		width : 1100px;
+		width : 1200px;
+	}
+	table {
+		border-collapse : collapse;
+		text-align: center;
+		margin-botton : 20px;
+		font-size : 14px;
+	}
+	th, td {
+		padding : 5px 10px;
+	}
+	th{
+		border-bottom : 2px double rgb(175, 160, 136);
+		color : rgb(104, 95, 82);
+	}
+	td{
+		border-bottom : 1px solid rgb(190, 190, 190);
+	}
+	fieldset {
+		padding: 30px;
+		margin-top : 30px;
+		border : 1px solid rgb(200, 200, 200);
+	}
+	h2{
+		color : rgb(175, 160, 136);
+	}
+	hr{
+		border-color : rgb(175, 160, 136);
+	}	
+	.btns{
+		margin : 40px;
+		text-align: center;
+	}
+	.btn{
+		border : none;
+		background-color : rgb(175, 160, 136);
+		border-radius : 5px;
+		padding : 12px 30px;
+		margin : 0px 10px;
+		color : white;
+		opacity: 1;
+  		transition: opacity 0.3s;
+	}
+	.btn:hover{
+		background-color : rgb(139, 124, 102);
+		opacity: 0.7;
+	}
+	input[type="button"]:hover {
+	  	cursor: pointer;
 	}
 </style>
+<header>
+    <jsp:include page="home.jsp" />
+</header>
 <body>
 <div id="container">
-<h1>예약 관리</h1>
+<h2>예약 관리</h2>
 <hr>
 	<%@ include file="../jdbc_set2.jsp" %>
 	<% 
 	String uId = (String) session.getAttribute("userId");
 	String uName = (String) session.getAttribute("userName"); 
 	%>
+	<fieldset>
 <form name="bookcheck">
 <table>
 	<tr>
@@ -74,13 +114,20 @@
 				%>
 				<tr>
 					<td>
+					<%
+					java.util.Calendar calendar = java.util.Calendar.getInstance();
+					calendar.setTime(new java.util.Date()); // 현재 날짜와 시간을 설정
+					
+					// 현재 날짜에서 하루를 뺀 전일 날짜로 변경
+					calendar.add(java.util.Calendar.DAY_OF_MONTH, -1);
+					java.util.Date yesterday = calendar.getTime();
+					%>
 					<% 
-					java.util.Date today = new java.util.Date();
 					java.util.Date startDate = java.sql.Date.valueOf(startdate);
-					if(book.equals("W")){
-						if(startDate.after(today)){
-							%><input type="radio" name="numCheck" value="<%=num%>"><%
-						}
+					if (book.equals("W")) {
+					    if (startDate.after(yesterday)) { // 전일 날짜를 사용하여 비교
+					        %><input type="radio" name="numCheck" value="<%=num%>"><%
+					    }
 					}
 					%>
 					</td>
@@ -89,7 +136,7 @@
 					<td><%=userName%></td>
 					<td>
 					<%
-					if (startDate.before(today)) {
+					if (startDate.before(yesterday)) {
 						%><span style="text-decoration:line-through;"><%=startdate%> ~ <%=lastdate%></span><%
 					}else{
 						%><%=startdate%> ~ <%=lastdate%><%
@@ -126,12 +173,17 @@
 		} 
 	%>
 	</table>
-	<input type="button" value="예약정보수정" onclick="a_update()"/>
-	<input type="button" value="체크인" onclick="a_approval()"/>
-	<input type="button" value="예약 취소" onclick="a_cancel()"/>
+		<div class="btns">
+			<input class="btn" type="button" value="예약정보수정" onclick="a_update()"/>
+			<input class="btn" type="button" value="체크인" onclick="a_approval()"/>
+			<input class="btn" type="button" value="예약 취소" onclick="a_cancel()"/>
+		</div>
 	</form>
 	<hr>
-<input type="button" value="이전으로" onclick="back()" />
+	<div class="btns">
+		<input class="btn" type="button" value="이전으로" onclick="back()" />
+	</div>
+</fieldset>
 </div>
 </body>
 </html>
@@ -140,7 +192,7 @@
 		location.href="admin.jsp";
 	}
 	function a_update(){
-		window.open("a_bookEvent.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");
+		window.open("a_bookEvent.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=500, height=700");
 	}
 	function a_approval(){
 		window.open("a_approval.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");

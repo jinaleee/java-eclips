@@ -9,7 +9,7 @@
 <style>
     #container{
         margin: 10px auto;
-        width: 1000px;
+        width: 1100px;
     }
     h2{
         color : rgb(175, 160, 136);
@@ -21,7 +21,7 @@
     fieldset {
         padding: 50px;
         margin-top : 30px;
-        border-color : #ccc; 
+        border : 1px solid rgb(200, 200, 200);
     }
     #text{
         color:gray;
@@ -35,6 +35,7 @@
         height : 30px;
         margin : 3px;
         padding : 5px;
+        border-bottom : 1px soild;
     }
     .btn1{
         border : none;
@@ -65,7 +66,7 @@
     #joinbox{
         padding :51px 40px;
         padding-left: 90px;
-        border-left : 1px solid gray;
+        border-left : 1px solid rgb(200, 200, 200);
     }
     #loginboxin{
     	padding : 40px;

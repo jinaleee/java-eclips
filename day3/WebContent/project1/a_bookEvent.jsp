@@ -7,6 +7,46 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+	.btns{
+		margin : 40px;
+		text-align: center;
+	}
+	.btn{
+		border : none;
+		background-color : rgb(175, 160, 136);
+		border-radius : 5px;
+		padding : 12px 30px;
+		margin : 0px 10px;
+		color : white;
+		opacity: 1;
+  		transition: opacity 0.3s;
+	}
+	.btn:hover{
+		background-color : rgb(139, 124, 102);
+		opacity: 0.7;
+	}
+	input[type="button"]:hover {
+	  	cursor: pointer;
+	}
+	.text{
+		text-align : center;
+		margin : 70px;
+		line-height : 30px;
+	    color: rgb(133 123 107);
+	    font-size: 20px;
+	    font-weight: 100;
+	}
+	#ul1, #ul2 {
+		display: inline-block;
+		vertical-align: top;
+		line-height : 50px;
+		margin-left : 30px;
+	}
+	li{
+		list-style : none;
+	}
+</style>
 <body>
 	<form name="updateForm" action="a_bookUpdate.jsp">
 		<%@ include file="../jdbc_set2.jsp"%>
@@ -33,54 +73,59 @@
 		%>
 
 		<input name="num" value="<%=num%>" hidden />
-		<div>예약 번호 : <%= num %></div>
-		<div>
-			ID : <input name="uId" value="<%=userID%>">
-		</div>
-		<div>
-			성함 : <input name="uName" value="<%=userName%>">
-		</div>
-		<div>
-			룸 : <select name="room" onchange="updatePaxOptions()">
+		<ul id="ul1">
+			<li>예약 번호</li>
+			<li>ID</li>
+			<li>성함</li>
+			<li>룸</li>
+			<li>입실일</li>
+			<li>퇴실일</li>
+			<li>인원수</li>
+			<li>조식</li>
+			<li>인피니티풀</li>
+			<li>레스토랑</li>
+		</ul>
+		
+		<ul id="ul2">
+			<li><%= num %></li>
+			<li><input name="uId" value="<%=userID%>"></li>
+			<li><input name="uName" value="<%=userName%>"></li>
+			<li>
+			<select name="room" onchange="updatePaxOptions()">
 				<option value="디럭스 더블">디럭스 더블</option>
 				<option value="디럭스 트윈">디럭스 트윈</option>
 				<option value="스위트 더블">스위트 더블</option>
 				<option value="스위트 트윈">스위트 트윈</option>
 				<option value="펜트하우스">펜트하우스</option>
 			</select>
-		</div>
-		<div>
-			입실일 : <input type="date" name="startdate" value="<%=startdate%>"
-				onchange="updatelastDate()">
-		</div>
-		<div>
-			퇴실일 : <input type="date" name="lastdate" value="<%=lastdate%>">
-		</div>
-		<div>
-			인원수 : <select name="pax">
+			</li>
+			<li>
+			<input type="date" name="startdate" value="<%=startdate%>" onchange="updatelastDate()">
+			</li>
+			<li><input type="date" name="lastdate" value="<%=lastdate%>"></li>
+			<li>
+			<select name="pax">
 			</select>
-		</div>
-		<div>
-			조식 : 신청 <input type="radio" name="bf" value="Y" checked> 미신청
-			<input type="radio" name="bf" value="N">
-		</div>
-		<div>
-			인피니티풀 : 신청 <input type="radio" name="pool" value="Y" checked>
-			미신청 <input type="radio" name="pool" value="N">
-		</div>
-		<div>
-			레스토랑 : 신청 <input type="radio" name="res" value="Y" checked>
-			미신청 <input type="radio" name="res" value="N">
-		</div>
+			</li>
+			<li>
+			신청 <input type="radio" name="bf" value="Y" checked> 　미신청 <input type="radio" name="bf" value="N">
+			</li>
+			<li>
+			신청 <input type="radio" name="pool" value="Y" checked> 　미신청 <input type="radio" name="pool" value="N">
+			</li>
+			<li>
+			신청 <input type="radio" name="res" value="Y" checked> 　미신청 <input type="radio" name="res" value="N">
+			</li>
+		</ul>
 		<%
 		}
 		} catch (SQLException e) {
 		out.println(e.getMessage());
 		}
 		%>
-		<div>
-			<input type="button" value="수정" onclick="a_update()">
-			<input type="button" value="취소" onclick="cancel()">
+		<div class="btns">
+			<input class="btn" type="button" value="수정" onclick="a_update()">
+			<input class="btn" type="button" value="취소" onclick="cancel()">
 		</div>
 	</form>
 

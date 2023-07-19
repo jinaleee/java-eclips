@@ -13,12 +13,16 @@
 		margin-botton : 20px;
 		font-size : 15px;
 	}
-	
 	th, td {
-		border : 1px solid black;
 		padding : 5px 10px;
 	}
-	
+	th{
+		border-bottom : 2px double rgb(175, 160, 136);
+		color : rgb(104, 95, 82);
+	}
+	td{
+		border-bottom : 1px solid rgb(190, 190, 190);
+	}
 	.btn {
 		margin-top : 20px;
 	}
@@ -26,13 +30,47 @@
 		margin : 10px auto;
 		width : 1100px;
 	}
-	fieldset {
-		padding : 45px;
-		margin : 30px 0px;
-	}
 	legend{
 		font-size : 22px;
 		font-weight : bold;
+	}
+	fieldset {
+		padding : 45px;
+		margin : 30px 0px;
+		border : 1px solid rgb(200, 200, 200);
+	}
+	h2{
+		color : rgb(175, 160, 136);
+	}
+	hr{
+		border-color : rgb(175, 160, 136);
+	}
+	.btn{
+		border : none;
+		background-color : rgb(175, 160, 136);
+		border-radius : 5px;
+		padding : 12px 30px;
+		margin : 0px 10px;
+		color : white;
+		opacity: 1;
+  		transition: opacity 0.3s;
+	}
+	.btn:hover{
+		background-color : rgb(139, 124, 102);
+		opacity: 0.7;
+	}
+	.btns{
+		margin-top : 30px;
+		text-align: center;
+	}
+	table {
+  		margin: 0 auto;
+	}
+	legend{
+		color : rgb(175, 160, 136);
+	}
+	input[type="button"]:hover {
+	  	cursor: pointer;
 	}
 </style>
 <header>
@@ -41,7 +79,7 @@
 <body>
 <div id="container">
 	<%@ include file="../jdbc_set2.jsp"%>
-	<h1>마이페이지</h1>
+	<h2>마이페이지</h2>
 	<% 
 		String uId = (String) session.getAttribute("userId");
 		String uName = (String) session.getAttribute("userName"); 
@@ -90,14 +128,22 @@ try {
 				<td>
 					<% 
                     if(book.equals("W")){
-                        %><input type="radio" name="numCheck"
-					value="<%=num%>"> <%
-                        }
-                    %>
+                    	if(cancel.equals("N")){
+                        %><input type="radio" name="numCheck" value="<%=num%>"> <%
+                    	}
+                    }%>
 				</td>
 				<td><%=num%></td>
 				<td><%=room%></td>
-				<td><%=startdate%> ~ <%=lastdate%></td>
+				<td><%
+					java.util.Date today = new java.util.Date();
+					java.util.Date startDate = java.sql.Date.valueOf(startdate);
+					if (startDate.before(today)) {
+						%><span style="text-decoration:line-through; color:gray;"><%=startdate%> ~ <%=lastdate%></span><%
+					}else{
+						%><%=startdate%> ~ <%=lastdate%><%
+					}
+				%></td>
 				<td><%=pax%></td>
 				<td><%=bf%></td>
 				<td><%=pool%></td>
@@ -138,7 +184,7 @@ try {
 } 
 %>
 		</table>
-		<div>
+		<div class="btns">
 			<input class="btn" type="button" value="예약 정보 수정" onclick="b_update()">
 			<input class="btn" type="button" value="예약 취소 신청" onclick="cancel()">
 		</div>
@@ -193,9 +239,8 @@ try {
 	%>
 		</table>
 	</form>
-	<div>
+	<div class="btns">
 		<input class="btn" type="button" value="회원정보수정" onclick="u_update()">
-		<input class="btn" type="button" value="메인으로" onclick="back()">
 	</div>
 	</fieldset>
 </div>
@@ -203,15 +248,15 @@ try {
 </html>
 <script>
 	function b_update(){
-		window.open("user_b_event.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");
+		window.open("user_b_event.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=500, height=700");
 	}
 	function cancel(){
 		window.open("user_cancel.jsp?num="+document.bookcheck.numCheck.value, "popup", "width=600, height=300");
 	}
 	function u_update(){
-		window.open("user_event.jsp", "popup", "width=600, height=300");
+		window.open("user_event.jsp", "popup", "width=500, height=550");
 	}
 	function back(){
-		location.href="home.jsp";
+		location.href="main.jsp";
 	}
 </script>
