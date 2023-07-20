@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>MANGCHI HOTEL</title>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <style>
@@ -18,6 +18,8 @@
 		opacity: 0.8;
 		margin-top: -32px;
 		margin-bottom: -10px;
+		margin-left:-10px;
+		margin-right:-10px;
 	}
 	.img-container a img.darken {
 		brightness: 20%; 
