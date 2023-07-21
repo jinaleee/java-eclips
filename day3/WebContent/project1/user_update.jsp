@@ -27,7 +27,7 @@
 				sql = "UPDATE JN_USER SET NAME = '"+ uName +"', PHONE = '"+ phone +"', BIRTH ='"+ birth +"', EMAIL='"+email+"', MAILYN='"+mailYN+"', MSYN='"+msYN+"' WHERE ID = '" + uId + "'";
 			}else{
 				sql = "UPDATE JN_USER SET NAME = '"+ uName +"', PHONE = '"+ phone +"', PWD = '"+ pwd +"', BIRTH ='"+ birth +"', EMAIL='"+email+"', MAILYN='"+mailYN+"', MSYN='"+msYN+"' WHERE ID = '" + uId + "'";
-			} 
+			}
 			stmt = conn.createStatement();
 			stmt.executeUpdate(sql);
 			session.setAttribute("userId", uId);
@@ -40,7 +40,6 @@
 </body>
 </html>
 <script>
-
 	alert("수정되었습니다");
 	window.close();
 	window.opener.location.reload();

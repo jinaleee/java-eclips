@@ -83,7 +83,7 @@
 		window.opener.location.reload();
 	}
 	function back(){
-		location.href = "a_bookEvent.jsp?num=<%= num %>";
+		location.href = "user_b_event.jsp?num=<%= num %>";
 		
 	}
 </script>
