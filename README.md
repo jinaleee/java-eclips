@@ -15,57 +15,57 @@
 <br>
 <h2>🖥 구현 이미지와 설명</h2>
 <h4>📌 메인 페이지</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309637520-3eec39fe-bb1b-4993-88f6-536736c91024.JPG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzAzMTEsIm5iZiI6MTcwOTUzMDAxMSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjM3NTIwLTNlZWMzOWZlLWJiMWItNDk5My04OGY2LTUzNjczNmM5MTAyNC5KUEc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTI2NTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMDNkY2Y1MmM4YTkxMWU5Mzg1MGU3MWI4YTU5NWVkYzY5OTgxNDJiYjUwNDgwNTZmM2I3Y2QxZmRlMmJiYWM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.kM1_czvOkxW8ZeoeAFVEE8phjr3Dr2rTYqMvTfNQCM8" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/a9ad7105-b222-430d-9ad0-97f2b9ab1cac" width="100%"></img><br>
 - 회원 가입과 로그인 페이지로 이동 가능, 로그인 후엔 마이페이지 이용 가능.<br>
 - 관리자 로그인시 관리자 페이지로 이동 가능(버튼 생성).<br>
 - 메인 페이지 이미지는 슬라이드 기능 사용으로 여러장의 사진 노출.<br>
 - 각 탭으로 이동 가능.<br>
 <br>
 <h4>📌 로그인 페이지</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309638651-6f344e91-6b98-42c3-b16b-fd0c6348147b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzA2NzksIm5iZiI6MTcwOTUzMDM3OSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjM4NjUxLTZmMzQ0ZTkxLTZiOTgtNDJjMy1iMTZiLWZkMGM2MzQ4MTQ3Yi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTMyNTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00OThiMjNmYmVlZDVmYmIzMDAwMTcxNmY5YzUwN2RhMWEyYzIxYWQxNzhkMTBmMWQ5YmYyNWFiNDUzMmEyMmUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9._QLEaMlaXUssDocyYMj8C_zLHuykbqSuYECvzoPqlFs" width="90%"></img>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640476-8bf0a73f-4850-4ea9-8abf-23dd13a48ec9.JPG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNDc2LThiZjBhNzNmLTQ4NTAtNGVhOS04YWJmLTIzZGQxM2E0OGVjOS5KUEc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMDI3NmE2ZDkxMzMxNWY4OWNjY2NkYzQwMzNkOWM0YTNkYzA5ODEwZDg0ZTY5Njc1NjUyNjg2MGE3MWU2YjFlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.YW1y0AggzhAMuWscIpa5DRF9i-FJGIXPwKXyBVXAKdo" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/cca2d30f-2aaf-4554-b737-612d1b784b49" width="100%"></img><br>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/8b9a4a72-894d-45db-9269-acb412e0f8e9" width="100%"></img><br>
 - 회원 가입 후 로그인 가능.<br>
 - 비밀번호 오류시 오류 화면. 5회 이상 오류시 로그인 불가 안내. 관리자가 초기화 가능.<br>
 <br>
 <h3>👨‍👨‍👧‍👦 고객 기능</h3>
 <h4>📌 회원가입 페이지</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640544-4e081abd-93f4-4daa-9c8a-fa817a45864d.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNTQ0LTRlMDgxYWJkLTkzZjQtNGRhYS05YzhhLWZhODE3YTQ1ODY0ZC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYWNjNTA2MGNiODMxZWE4OWM0Y2E1MzFkODJmN2QzOTQ5NjZlZjJlYmYzNzNjMTU2MmExMWNkYWEyNmE0ZWJmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.cgBck8A1Od7zmlrKpQJI9xN9VYGhUp8E83rGZVN_SGk" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/20a3de12-0ba7-41f4-bb65-f365f483afda" width="100%"></img><br>
 - 데이터 조회하여 중복 확인 가능. <br>
 - 입력 정보에 정규식 적용. <br>
 - 핸드폰 번호, 이메일 등 각 정보 개별로 입력 받아 DB에 하나의 정보로 저장. <br>
 <br>
 <h4>📌 예약 페이지</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640655-561ff6ed-77e6-4e37-a124-1e25280b6098.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNjU1LTU2MWZmNmVkLTc3ZTYtNGUzNy1hMTI0LTFlMjUyODBiNjA5OC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMjMyMzU4ZGE1NjhjNGY4OGZkNDAzNjI4YjgwMmVmYmIwMzUwNWY4MjQ4ZDUzMDJiNGU1NmVjNTkyMjQ5MzNhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.s6wGENAUw1yXMHwx5ZAu0c7zBhHRe_K9KFLpCfPkj-M" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/97e6b1cf-8fcc-454f-9a2a-4b33ad3a6632" width="100%"></img><br>
 - 오늘 날짜 이후로 예약 날짜 선택 가능. DB 조회 후 이미 예약된 날짜일 경우 예약 불가. <br>
 - 5회 이상 이용한 VIP일 경우 인피니티풀 무료, 아닐 경우 선택 여부로 표시. <br>
 <br>
 <h4>📌 마이페이지</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640595-2763b7d5-9a3b-4473-bd72-8c1d5de73095.JPG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNTk1LTI3NjNiN2Q1LTlhM2ItNDQ3My1iZDcyLThjMWQ1ZGU3MzA5NS5KUEc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMTI0YmZhYTM2YzU2NTFjNGNiNjc1NzAzODIyNTJiMDc5YzQ2MjZiYjA5ZjEwYThhZGYyZGJjMDBlZGE4ZmZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.wt3M_GUrMuZdY0MVJG3MbuVuwlh4rZE2OXCYnxE8Y90" width="90%"></img>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640518-3e557c64-95b7-4b2f-8f7a-81f74f168005.JPG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNTE4LTNlNTU3YzY0LTk1YjctNGIyZi04ZjdhLTgxZjc0ZjE2ODAwNS5KUEc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMGNjZGRiZjdlZDdlMzc2Nzg0YjFiOGQzNDIzOWNkNGIzZThlMDk2YjhkNTg5NTg0YTMyMzgxYTNhMjI5YjhkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.lQDNDU8WUoF6e2HweSlqZGYgvwTnuRmYZ0IqKOXe4tw" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/9704576d-84f2-4c85-80ec-17fdb788dedd" width="100%"></img><br>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/13e272b3-5db2-4739-bf2e-0d5cef02d2e7" width="100%"></img><br>
 - 마이페이지에서 회원 정보와 예약 내역 및 예약 상태 확인 가능.<br>
 - 회원 정보, 예약 정보 수정 및 취소 요청 가능.<br>
 <br>
 
 <h3>👨‍🔧 관리자 기능</h3>
 <h4>📌 회원 관리</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640615-054a1c95-16f9-4464-b2cb-3941135d355b.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNjE1LTA1NGExYzk1LTE2ZjktNDQ2NC1iMmNiLTM5NDExMzVkMzU1Yi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iZmYwNjYzNjRkMGQwYzhlZWNlYjFjMGQxMGYyMzRjYWE1NjgzMWU1YjllZTJmOTZhMTAyOWFlNGE1YjJmOGI5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.o9Qjrnv7e8Vc8QeL1eOA1c8hgeoYeaB16ARC3SLsz-s" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/6fa503b4-6339-4acc-8c1a-5b294efb3b6d" width="100%"></img><br>
 - 회원 정보 조회와 삭제, 정지 여부 전환 기능, 비밀번호 오류 횟수 초기화 기능, VIP 전환 기능. <br>
 - 회원 정보 일부 수정 기능.<br>
 <br>
 <h4>📌 예약 관리</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640673-3bd1f1e4-af6e-4020-af44-ab44f82bda8b.JPG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNjczLTNiZDFmMWU0LWFmNmUtNDAyMC1hZjQ0LWFiNDRmODJiZGE4Yi5KUEc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YWU3NDk2MTc2NzZmMDM2Y2U0MjUzMDhjMDQyNGExNThhMzA2ZTA0MmYzMWIxMjVjZmM2YmZhYjNiOTVmZTUzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.dPI65Bg4ldtaIVtuzKfXGHeuB1bRcGaIj0lm2mZaDPA" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/27d6f86a-7b6a-4941-a904-de48ca0a6629" width="100%"></img><br>
 - 예약 내역 확인 가능. 예약 승인과 취소 요청 승인, 정보 수정 기능. 체크인 기록 기능.<br>
 - 취소 건 크로스 라인 표시.<br>
 <br>
 <h3>🙌 그 외 페이지</h3>
 <h4>📌 오시는 길</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640779-0565197b-ed2c-454c-998b-28c6df490caa.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNzc5LTA1NjUxOTdiLWVkMmMtNDU0Yy05OThiLTI4YzZkZjQ5MGNhYS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NmNhOWM3ZjE1ZDc2NjBmZGVkMWNlNDRiNDQzZmEwMTFhMTA3NmVhYjExNWNjZTM5NTg5NzUwNDRjZDRkZGZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.DCBjhSmuH9gTPwszlbg5CNeJOAI8AvrpwwrK0UOyDME" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/054a36f4-1a83-44ac-9355-6c6056e0bfbe" width="100%"></img><br>
 - 구글 지도로 주소 표시.<br>
 - 네이버, 카카오 맵 페이지로 이동 가능. (새창)<br>
 <br>
 <h4>📌 호텔 정보</h4>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640756-0007206d-cdf1-460e-b90f-aea2cfe2295e.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNzU2LTAwMDcyMDZkLWNkZjEtNDYwZS1iOTBmLWFlYTJjZmUyMjk1ZS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZjBlZDIwYzczOThlNjQwYTljZDk0MThmMDIyZmU4ZmY4ZjJhZmJmZDNkYmQ5OTM1MDRkMmViODZhMjNjNzJiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5eb-MaOu9gdd2w9G0oEpvWBp1e--QrnslFE66yzWPQU" width="90%"></img>
-<img src = "https://private-user-images.githubusercontent.com/137017258/309640794-31d2518a-d821-46de-b82f-646db0a9e6b4.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk1MzEzODUsIm5iZiI6MTcwOTUzMTA4NSwicGF0aCI6Ii8xMzcwMTcyNTgvMzA5NjQwNzk0LTMxZDI1MThhLWQ4MjEtNDZkZS1iODJmLTY0NmRiMGE5ZTZiNC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzA0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMwNFQwNTQ0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01ODM2OTY5NjljMmM5NGVhYzNlMzMwMDhmODk3ZjJlODRjMzFlYTllMjVlZjZlNWY4YWQyNmNhNzFhNmY1ODU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.6-DuPzC5NCJPHRZprEs0HB2D-TJxv1ZC7VRqM0eH9Mo" width="90%"></img>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/c5759334-06a2-4703-8598-bfea3b020a27" width="100%"></img><br>
+<img src = "https://github.com/jinaleee/jinaleee/assets/137017258/d366b7f0-ed77-4742-868b-bd5241a35096" width="100%"></img><br>
 - 기타 호텔 정보 표시<br>
 <br>
 <br>
